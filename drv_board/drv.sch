@@ -1,0 +1,1193 @@
+EESchema Schematic File Version 4
+LIBS:drv_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L myic:MP6612D U9
+U 1 1 5EC23AC4
+P 5200 3250
+F 0 "U9" H 5200 3900 50  0000 C CNN
+F 1 "MP6612D" V 5200 3300 50  0000 C CNN
+F 2 "Package_SO:ETSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3x4.2mm" H 5200 3250 50  0001 C CNN
+F 3 "" H 5200 3250 50  0001 C CNN
+	1    5200 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 1000 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	1500 1000 1650 1000
+Text Label 1650 1000 0    50   ~ 0
+VIN
+Wire Wire Line
+	4700 2850 4600 2850
+Wire Wire Line
+	4700 3000 4600 3000
+Text HLabel 4600 2850 0    50   Input ~ 0
+M1_EN
+Text HLabel 4600 3000 0    50   Input ~ 0
+M1_DIR
+Wire Wire Line
+	4700 3200 4600 3200
+Text HLabel 4600 3200 0    50   Input ~ 0
+~M_SLEEP
+Wire Wire Line
+	4700 3400 4150 3400
+Text Label 4450 3900 0    50   ~ 0
+GND
+$Comp
+L Device:C C38
+U 1 1 5EC26C24
+P 4450 3700
+F 0 "C38" H 4565 3746 50  0000 L CNN
+F 1 "0.1u" H 4565 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4488 3550 50  0001 C CNN
+F 3 "~" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3550 4450 3550
+Wire Wire Line
+	4450 3850 4450 3900
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EC27D32
+P 4150 3400
+F 0 "TP3" V 4345 3472 50  0000 C CNN
+F 1 "TestPoint" V 4254 3472 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4350 3400 50  0001 C CNN
+F 3 "~" H 4350 3400 50  0001 C CNN
+	1    4150 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3900 5050 4000
+Wire Wire Line
+	5200 3900 5200 4000
+Wire Wire Line
+	5200 4000 5300 4000
+Wire Wire Line
+	5300 4000 5300 3900
+Wire Wire Line
+	5050 4000 5200 4000
+Connection ~ 5050 4000
+Wire Wire Line
+	5050 4000 5050 4100
+Connection ~ 5200 4000
+Text Label 5050 4100 0    50   ~ 0
+GND
+$Comp
+L Device:R R27
+U 1 1 5EC28DFE
+P 5950 3650
+F 0 "R27" V 5743 3650 50  0000 C CNN
+F 1 "4k7" V 5834 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 3650 50  0001 C CNN
+F 3 "~" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	0    1    1    0   
+$EndComp
+Text Label 6250 3650 0    50   ~ 0
+GND
+Wire Wire Line
+	5700 3650 5800 3650
+Wire Wire Line
+	6100 3650 6250 3650
+$Comp
+L Device:C C33
+U 1 1 5EC2AF6F
+P 5950 2850
+F 0 "C33" V 6202 2850 50  0000 C CNN
+F 1 "0.1u" V 6111 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5988 2700 50  0001 C CNN
+F 3 "~" H 5950 2850 50  0001 C CNN
+	1    5950 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 2850 5800 2850
+Wire Wire Line
+	6200 3000 6200 2850
+Wire Wire Line
+	6200 2850 6100 2850
+Wire Wire Line
+	5700 3000 6200 3000
+Wire Wire Line
+	6200 2850 6600 2850
+Connection ~ 6200 2850
+Text Label 6850 2850 0    50   ~ 0
+VIN
+Text Label 6600 2350 0    50   ~ 0
+GND
+$Comp
+L Device:C C31
+U 1 1 5EC39064
+P 6600 2600
+F 0 "C31" H 6715 2646 50  0000 L CNN
+F 1 "22u/25v" H 6715 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 2450 50  0001 C CNN
+F 3 "~" H 6600 2600 50  0001 C CNN
+	1    6600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2750 6600 2850
+Connection ~ 6600 2850
+Wire Wire Line
+	6600 2850 6850 2850
+Text Label 6050 3200 0    50   ~ 0
+M1_OUT1
+Text Label 6050 3300 0    50   ~ 0
+M1_OUT2
+Text Label 900  2250 2    50   ~ 0
+M1_OUT2
+Wire Wire Line
+	1500 2150 1600 2150
+Wire Wire Line
+	1900 2050 1800 2050
+Wire Wire Line
+	1900 1950 1800 1950
+Text Label 1600 2150 0    50   ~ 0
+GND
+$Comp
+L Device:R R25
+U 1 1 5EC4B9C9
+P 6250 3500
+F 0 "R25" V 6043 3500 50  0000 C CNN
+F 1 "DNP" V 6134 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6180 3500 50  0001 C CNN
+F 3 "~" H 6250 3500 50  0001 C CNN
+	1    6250 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3500 6100 3500
+Wire Wire Line
+	6400 3500 6550 3500
+Text Label 6550 3500 0    50   ~ 0
+GND
+$Comp
+L myic:MP6612D U10
+U 1 1 5EC5963E
+P 8700 3250
+F 0 "U10" H 8700 3900 50  0000 C CNN
+F 1 "MP6612D" V 8700 3300 50  0000 C CNN
+F 2 "Package_SO:ETSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3x4.2mm" H 8700 3250 50  0001 C CNN
+F 3 "" H 8700 3250 50  0001 C CNN
+	1    8700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2850 8100 2850
+Wire Wire Line
+	8200 3000 8100 3000
+Text HLabel 8100 2850 0    50   Input ~ 0
+M2_EN
+Text HLabel 8100 3000 0    50   Input ~ 0
+M2_DIR
+Wire Wire Line
+	8200 3200 8100 3200
+Text HLabel 8100 3200 0    50   Input ~ 0
+~M_SLEEP
+Wire Wire Line
+	8200 3400 7650 3400
+Text Label 7950 3900 0    50   ~ 0
+GND
+$Comp
+L Device:C C39
+U 1 1 5EC5964C
+P 7950 3700
+F 0 "C39" H 8065 3746 50  0000 L CNN
+F 1 "0.1u" H 8065 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7988 3550 50  0001 C CNN
+F 3 "~" H 7950 3700 50  0001 C CNN
+	1    7950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3550 7950 3550
+Wire Wire Line
+	7950 3850 7950 3900
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EC59654
+P 7650 3400
+F 0 "TP4" V 7845 3472 50  0000 C CNN
+F 1 "TestPoint" V 7754 3472 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 3400 50  0001 C CNN
+F 3 "~" H 7850 3400 50  0001 C CNN
+	1    7650 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 3900 8550 4000
+Wire Wire Line
+	8700 3900 8700 4000
+Wire Wire Line
+	8700 4000 8800 4000
+Wire Wire Line
+	8800 4000 8800 3900
+Wire Wire Line
+	8550 4000 8700 4000
+Connection ~ 8550 4000
+Wire Wire Line
+	8550 4000 8550 4100
+Connection ~ 8700 4000
+Text Label 8550 4100 0    50   ~ 0
+GND
+$Comp
+L Device:R R28
+U 1 1 5EC59663
+P 9450 3650
+F 0 "R28" V 9243 3650 50  0000 C CNN
+F 1 "4k7" V 9334 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 3650 50  0001 C CNN
+F 3 "~" H 9450 3650 50  0001 C CNN
+	1    9450 3650
+	0    1    1    0   
+$EndComp
+Text Label 9750 3650 0    50   ~ 0
+GND
+Wire Wire Line
+	9200 3650 9300 3650
+Wire Wire Line
+	9600 3650 9750 3650
+$Comp
+L Device:C C34
+U 1 1 5EC5966C
+P 9450 2850
+F 0 "C34" V 9702 2850 50  0000 C CNN
+F 1 "0.1u" V 9611 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9488 2700 50  0001 C CNN
+F 3 "~" H 9450 2850 50  0001 C CNN
+	1    9450 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2850 9300 2850
+Wire Wire Line
+	9700 3000 9700 2850
+Wire Wire Line
+	9700 2850 9600 2850
+Wire Wire Line
+	9200 3000 9700 3000
+Wire Wire Line
+	9700 2850 10100 2850
+Connection ~ 9700 2850
+Text Label 10350 2850 0    50   ~ 0
+VIN
+Text Label 10100 2350 0    50   ~ 0
+GND
+$Comp
+L Device:C C32
+U 1 1 5EC59682
+P 10100 2600
+F 0 "C32" H 10215 2646 50  0000 L CNN
+F 1 "22u/25v" H 10215 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10138 2450 50  0001 C CNN
+F 3 "~" H 10100 2600 50  0001 C CNN
+	1    10100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2750 10100 2850
+Connection ~ 10100 2850
+Wire Wire Line
+	10100 2850 10350 2850
+Text Label 9550 3200 0    50   ~ 0
+M2_OUT1
+Text Label 9550 3300 0    50   ~ 0
+M2_OUT2
+$Comp
+L Device:R R26
+U 1 1 5EC59693
+P 9750 3500
+F 0 "R26" V 9543 3500 50  0000 C CNN
+F 1 "DNP" V 9634 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 9680 3500 50  0001 C CNN
+F 3 "~" H 9750 3500 50  0001 C CNN
+	1    9750 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 3500 9600 3500
+Wire Wire Line
+	9900 3500 10050 3500
+Text Label 10050 3500 0    50   ~ 0
+GND
+$Comp
+L myic:MP6612D U11
+U 1 1 5EC66741
+P 5200 5450
+F 0 "U11" H 5200 6100 50  0000 C CNN
+F 1 "MP6612D" V 5200 5450 50  0000 C CNN
+F 2 "Package_SO:ETSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3x4.2mm" H 5200 5450 50  0001 C CNN
+F 3 "" H 5200 5450 50  0001 C CNN
+	1    5200 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5050 4600 5050
+Wire Wire Line
+	4700 5200 4600 5200
+Text HLabel 4600 5050 0    50   Input ~ 0
+M3_EN
+Text HLabel 4600 5200 0    50   Input ~ 0
+M3_DIR
+Wire Wire Line
+	4700 5400 4600 5400
+Text HLabel 4600 5400 0    50   Input ~ 0
+~M_SLEEP
+Wire Wire Line
+	4700 5600 4150 5600
+Text Label 4450 6100 0    50   ~ 0
+GND
+$Comp
+L Device:C C50
+U 1 1 5EC6674F
+P 4450 5900
+F 0 "C50" H 4565 5946 50  0000 L CNN
+F 1 "0.1u" H 4565 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4488 5750 50  0001 C CNN
+F 3 "~" H 4450 5900 50  0001 C CNN
+	1    4450 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5750 4450 5750
+Wire Wire Line
+	4450 6050 4450 6100
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EC66757
+P 4150 5600
+F 0 "TP5" V 4345 5672 50  0000 C CNN
+F 1 "TestPoint" V 4254 5672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4350 5600 50  0001 C CNN
+F 3 "~" H 4350 5600 50  0001 C CNN
+	1    4150 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 6100 5050 6200
+Wire Wire Line
+	5200 6100 5200 6200
+Wire Wire Line
+	5200 6200 5300 6200
+Wire Wire Line
+	5300 6200 5300 6100
+Wire Wire Line
+	5050 6200 5200 6200
+Connection ~ 5050 6200
+Wire Wire Line
+	5050 6200 5050 6300
+Connection ~ 5200 6200
+Text Label 5050 6300 0    50   ~ 0
+GND
+$Comp
+L Device:R R31
+U 1 1 5EC66766
+P 5950 5850
+F 0 "R31" V 5743 5850 50  0000 C CNN
+F 1 "4k7" V 5834 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 5850 50  0001 C CNN
+F 3 "~" H 5950 5850 50  0001 C CNN
+	1    5950 5850
+	0    1    1    0   
+$EndComp
+Text Label 6250 5850 0    50   ~ 0
+GND
+Wire Wire Line
+	5700 5850 5800 5850
+Wire Wire Line
+	6100 5850 6250 5850
+$Comp
+L Device:C C44
+U 1 1 5EC6676F
+P 5950 5050
+F 0 "C44" V 6202 5050 50  0000 C CNN
+F 1 "0.1u" V 6111 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5988 4900 50  0001 C CNN
+F 3 "~" H 5950 5050 50  0001 C CNN
+	1    5950 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 5050 5800 5050
+Wire Wire Line
+	6200 5200 6200 5050
+Wire Wire Line
+	6200 5050 6100 5050
+Wire Wire Line
+	5700 5200 6200 5200
+Wire Wire Line
+	6200 5050 6600 5050
+Connection ~ 6200 5050
+Text Label 6850 5050 0    50   ~ 0
+VIN
+Text Label 6600 4550 0    50   ~ 0
+GND
+$Comp
+L Device:C C42
+U 1 1 5EC66785
+P 6600 4800
+F 0 "C42" H 6715 4846 50  0000 L CNN
+F 1 "22u/25v" H 6715 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 4650 50  0001 C CNN
+F 3 "~" H 6600 4800 50  0001 C CNN
+	1    6600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4950 6600 5050
+Connection ~ 6600 5050
+Wire Wire Line
+	6600 5050 6850 5050
+Text Label 6050 5400 0    50   ~ 0
+M3_OUT1
+Text Label 6050 5500 0    50   ~ 0
+M3_OUT2
+$Comp
+L Device:R R29
+U 1 1 5EC66796
+P 6250 5700
+F 0 "R29" V 6043 5700 50  0000 C CNN
+F 1 "DNP" V 6134 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6180 5700 50  0001 C CNN
+F 3 "~" H 6250 5700 50  0001 C CNN
+	1    6250 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 5700 6100 5700
+Wire Wire Line
+	6400 5700 6550 5700
+Text Label 6550 5700 0    50   ~ 0
+GND
+$Comp
+L myic:MP6612D U12
+U 1 1 5EC7D472
+P 8700 5450
+F 0 "U12" H 8700 6100 50  0000 C CNN
+F 1 "MP6612D" V 8700 5450 50  0000 C CNN
+F 2 "Package_SO:ETSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3x4.2mm" H 8700 5450 50  0001 C CNN
+F 3 "" H 8700 5450 50  0001 C CNN
+	1    8700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5050 8100 5050
+Wire Wire Line
+	8200 5200 8100 5200
+Text HLabel 8100 5050 0    50   Input ~ 0
+M4_EN
+Text HLabel 8100 5200 0    50   Input ~ 0
+M4_DIR
+Wire Wire Line
+	8200 5400 8100 5400
+Text HLabel 8100 5400 0    50   Input ~ 0
+~M_SLEEP
+Wire Wire Line
+	8200 5600 7650 5600
+Text Label 7950 6100 0    50   ~ 0
+GND
+$Comp
+L Device:C C51
+U 1 1 5EC7D480
+P 7950 5900
+F 0 "C51" H 8065 5946 50  0000 L CNN
+F 1 "0.1u" H 8065 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7988 5750 50  0001 C CNN
+F 3 "~" H 7950 5900 50  0001 C CNN
+	1    7950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5750 7950 5750
+Wire Wire Line
+	7950 6050 7950 6100
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EC7D488
+P 7650 5600
+F 0 "TP6" V 7845 5672 50  0000 C CNN
+F 1 "TestPoint" V 7754 5672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 5600 50  0001 C CNN
+F 3 "~" H 7850 5600 50  0001 C CNN
+	1    7650 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 6100 8550 6200
+Wire Wire Line
+	8700 6100 8700 6200
+Wire Wire Line
+	8700 6200 8800 6200
+Wire Wire Line
+	8800 6200 8800 6100
+Wire Wire Line
+	8550 6200 8700 6200
+Connection ~ 8550 6200
+Wire Wire Line
+	8550 6200 8550 6300
+Connection ~ 8700 6200
+Text Label 8550 6300 0    50   ~ 0
+GND
+$Comp
+L Device:R R32
+U 1 1 5EC7D497
+P 9450 5850
+F 0 "R32" V 9243 5850 50  0000 C CNN
+F 1 "4k7" V 9334 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 5850 50  0001 C CNN
+F 3 "~" H 9450 5850 50  0001 C CNN
+	1    9450 5850
+	0    1    1    0   
+$EndComp
+Text Label 9750 5850 0    50   ~ 0
+GND
+Wire Wire Line
+	9200 5850 9300 5850
+Wire Wire Line
+	9600 5850 9750 5850
+$Comp
+L Device:C C45
+U 1 1 5EC7D4A0
+P 9450 5050
+F 0 "C45" V 9702 5050 50  0000 C CNN
+F 1 "0.1u" V 9611 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9488 4900 50  0001 C CNN
+F 3 "~" H 9450 5050 50  0001 C CNN
+	1    9450 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 5050 9300 5050
+Wire Wire Line
+	9700 5200 9700 5050
+Wire Wire Line
+	9700 5050 9600 5050
+Wire Wire Line
+	9200 5200 9700 5200
+Wire Wire Line
+	9700 5050 10100 5050
+Connection ~ 9700 5050
+Text Label 10350 5050 0    50   ~ 0
+VIN
+Text Label 10100 4550 0    50   ~ 0
+GND
+$Comp
+L Device:C C43
+U 1 1 5EC7D4B6
+P 10100 4800
+F 0 "C43" H 10215 4846 50  0000 L CNN
+F 1 "22u/25v" H 10215 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10138 4650 50  0001 C CNN
+F 3 "~" H 10100 4800 50  0001 C CNN
+	1    10100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4950 10100 5050
+Connection ~ 10100 5050
+Wire Wire Line
+	10100 5050 10350 5050
+Text Label 9550 5400 0    50   ~ 0
+M4_OUT1
+Text Label 9550 5500 0    50   ~ 0
+M4_OUT2
+$Comp
+L Device:R R30
+U 1 1 5EC7D4C7
+P 9750 5700
+F 0 "R30" V 9543 5700 50  0000 C CNN
+F 1 "DNP" V 9634 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 9680 5700 50  0001 C CNN
+F 3 "~" H 9750 5700 50  0001 C CNN
+	1    9750 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 5700 9600 5700
+Wire Wire Line
+	9900 5700 10050 5700
+Text Label 10050 5700 0    50   ~ 0
+GND
+$Comp
+L Device:C C36
+U 1 1 5ECB0DF5
+P 6600 3200
+F 0 "C36" V 6348 3200 50  0000 C CNN
+F 1 "10n" V 6439 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6638 3050 50  0001 C CNN
+F 3 "~" H 6600 3200 50  0001 C CNN
+	1    6600 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3200 6450 3200
+Wire Wire Line
+	6900 3300 6900 3200
+Wire Wire Line
+	6900 3200 6750 3200
+Wire Wire Line
+	5700 3300 6900 3300
+$Comp
+L Device:C C37
+U 1 1 5ECBF00E
+P 10100 3200
+F 0 "C37" V 9848 3200 50  0000 C CNN
+F 1 "10n" V 9939 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10138 3050 50  0001 C CNN
+F 3 "~" H 10100 3200 50  0001 C CNN
+	1    10100 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C47
+U 1 1 5ECBF94A
+P 6600 5400
+F 0 "C47" V 6348 5400 50  0000 C CNN
+F 1 "10n" V 6439 5400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6638 5250 50  0001 C CNN
+F 3 "~" H 6600 5400 50  0001 C CNN
+	1    6600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C48
+U 1 1 5ECC0185
+P 10100 5400
+F 0 "C48" V 9848 5400 50  0000 C CNN
+F 1 "10n" V 9939 5400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10138 5250 50  0001 C CNN
+F 3 "~" H 10100 5400 50  0001 C CNN
+	1    10100 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 3200 9950 3200
+Wire Wire Line
+	10250 3200 10350 3200
+Wire Wire Line
+	10350 3200 10350 3300
+Wire Wire Line
+	9200 3300 10350 3300
+Wire Wire Line
+	5700 5400 6450 5400
+Wire Wire Line
+	6750 5400 6850 5400
+Wire Wire Line
+	6850 5400 6850 5500
+Wire Wire Line
+	5700 5500 6850 5500
+Wire Wire Line
+	9200 5400 9950 5400
+Wire Wire Line
+	10350 5500 10350 5400
+Wire Wire Line
+	10350 5400 10250 5400
+Wire Wire Line
+	9200 5500 10350 5500
+Text HLabel 1500 1100 0    50   Input ~ 0
++3v3
+Wire Wire Line
+	1500 1100 1650 1100
+Text Label 1650 1100 0    50   ~ 0
++3v3
+Text HLabel 1900 2050 2    50   Output ~ 0
+M1_QDB
+$Comp
+L Device:C C30
+U 1 1 5ED8E465
+P 1800 2350
+F 0 "C30" H 1915 2396 50  0000 L CNN
+F 1 "10n" H 1915 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 2200 50  0001 C CNN
+F 3 "~" H 1800 2350 50  0001 C CNN
+	1    1800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 5ED8F040
+P 1800 1650
+F 0 "C29" H 1915 1696 50  0000 L CNN
+F 1 "10n" H 1915 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 1500 50  0001 C CNN
+F 3 "~" H 1800 1650 50  0001 C CNN
+	1    1800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_TVS-Diodes:PESD2CAN_215 D11
+U 1 1 5ED9320B
+P 2600 2000
+F 0 "D11" H 2600 2387 60  0000 C CNN
+F 1 "PESD2CAN_215" H 2600 2281 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2800 2200 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 2300 60  0001 L CNN
+F 4 "1727-3891-1-ND" H 2800 2400 60  0001 L CNN "Digi-Key_PN"
+F 5 "PESD2CAN,215" H 2800 2500 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 2800 2600 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 2800 2700 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 2800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/PESD2CAN,215/1727-3891-1-ND/1589996" H 2800 2900 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 24V 41V SOT23" H 2800 3000 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 2800 3100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2800 3200 60  0001 L CNN "Status"
+	1    2600 2000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1800 1900 1800 1950
+Connection ~ 1800 1950
+Wire Wire Line
+	1800 2050 1800 2100
+Connection ~ 1800 2050
+Wire Wire Line
+	1800 1800 1800 1900
+Connection ~ 1800 1900
+Wire Wire Line
+	1800 2200 1800 2100
+Connection ~ 1800 2100
+Wire Wire Line
+	1800 1500 1800 1400
+Wire Wire Line
+	1800 2500 1800 2600
+Text Label 1800 2600 0    50   ~ 0
+GND
+Text Label 1800 1400 0    50   ~ 0
+GND
+Wire Wire Line
+	3000 2000 2900 2000
+Text Label 3000 2000 0    50   ~ 0
+GND
+Wire Wire Line
+	900  3450 1000 3450
+Wire Wire Line
+	900  3650 1000 3650
+Text Label 900  3450 2    50   ~ 0
+M2_OUT1
+Text Label 900  3650 2    50   ~ 0
+M2_OUT2
+Wire Wire Line
+	1600 3550 1500 3550
+Wire Wire Line
+	1900 3450 1800 3450
+Wire Wire Line
+	1900 3350 1800 3350
+Text Label 1600 3550 0    50   ~ 0
+GND
+Text HLabel 1900 3350 2    50   Output ~ 0
+M2_QDA
+Text HLabel 1900 3450 2    50   Output ~ 0
+M2_QDB
+$Comp
+L Device:C C40
+U 1 1 5EE21683
+P 1800 3750
+F 0 "C40" H 1915 3796 50  0000 L CNN
+F 1 "10n" H 1915 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 3600 50  0001 C CNN
+F 3 "~" H 1800 3750 50  0001 C CNN
+	1    1800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 5EE21689
+P 1800 3050
+F 0 "C35" H 1915 3096 50  0000 L CNN
+F 1 "10n" H 1915 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 2900 50  0001 C CNN
+F 3 "~" H 1800 3050 50  0001 C CNN
+	1    1800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_TVS-Diodes:PESD2CAN_215 D12
+U 1 1 5EE21698
+P 2600 3400
+F 0 "D12" H 2600 3787 60  0000 C CNN
+F 1 "PESD2CAN_215" H 2600 3681 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2800 3600 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 3700 60  0001 L CNN
+F 4 "1727-3891-1-ND" H 2800 3800 60  0001 L CNN "Digi-Key_PN"
+F 5 "PESD2CAN,215" H 2800 3900 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 2800 4000 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 2800 4100 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 4200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/PESD2CAN,215/1727-3891-1-ND/1589996" H 2800 4300 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 24V 41V SOT23" H 2800 4400 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 2800 4500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2800 4600 60  0001 L CNN "Status"
+	1    2600 3400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1800 3300 1800 3350
+Connection ~ 1800 3350
+Wire Wire Line
+	1800 3450 1800 3500
+Connection ~ 1800 3450
+Wire Wire Line
+	1800 3200 1800 3300
+Connection ~ 1800 3300
+Wire Wire Line
+	1800 3600 1800 3500
+Connection ~ 1800 3500
+Wire Wire Line
+	1800 2900 1800 2800
+Wire Wire Line
+	1800 3900 1800 4000
+Text Label 1800 4000 0    50   ~ 0
+GND
+Text Label 1800 2800 0    50   ~ 0
+GND
+Wire Wire Line
+	3000 3400 2900 3400
+Text Label 3000 3400 0    50   ~ 0
+GND
+Wire Wire Line
+	900  4750 950  4750
+Wire Wire Line
+	900  4850 1000 4850
+Text Label 900  4850 2    50   ~ 0
+M3_OUT1
+Text Label 900  5050 2    50   ~ 0
+M3_OUT2
+Wire Wire Line
+	1900 4850 1800 4850
+Wire Wire Line
+	1900 4750 1800 4750
+Text Label 1600 4950 0    50   ~ 0
+GND
+Text HLabel 1900 4750 2    50   Output ~ 0
+M3_QDA
+Text HLabel 1900 4850 2    50   Output ~ 0
+M3_QDB
+$Comp
+L Device:C C46
+U 1 1 5EE2D4D1
+P 1800 5150
+F 0 "C46" H 1915 5196 50  0000 L CNN
+F 1 "10n" H 1915 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 5000 50  0001 C CNN
+F 3 "~" H 1800 5150 50  0001 C CNN
+	1    1800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C41
+U 1 1 5EE2D4D7
+P 1800 4450
+F 0 "C41" H 1915 4496 50  0000 L CNN
+F 1 "10n" H 1915 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 4300 50  0001 C CNN
+F 3 "~" H 1800 4450 50  0001 C CNN
+	1    1800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_TVS-Diodes:PESD2CAN_215 D13
+U 1 1 5EE2D4E6
+P 2600 4800
+F 0 "D13" H 2600 5187 60  0000 C CNN
+F 1 "PESD2CAN_215" H 2600 5081 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2800 5000 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 5100 60  0001 L CNN
+F 4 "1727-3891-1-ND" H 2800 5200 60  0001 L CNN "Digi-Key_PN"
+F 5 "PESD2CAN,215" H 2800 5300 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 2800 5400 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 2800 5500 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 5600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/PESD2CAN,215/1727-3891-1-ND/1589996" H 2800 5700 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 24V 41V SOT23" H 2800 5800 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 2800 5900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2800 6000 60  0001 L CNN "Status"
+	1    2600 4800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1800 4700 1800 4750
+Connection ~ 1800 4750
+Wire Wire Line
+	1800 4850 1800 4900
+Connection ~ 1800 4850
+Wire Wire Line
+	1800 4600 1800 4700
+Connection ~ 1800 4700
+Wire Wire Line
+	1800 5000 1800 4900
+Connection ~ 1800 4900
+Wire Wire Line
+	1800 4300 1800 4200
+Wire Wire Line
+	1800 5300 1800 5400
+Text Label 1800 5400 0    50   ~ 0
+GND
+Text Label 1800 4200 0    50   ~ 0
+GND
+Wire Wire Line
+	3000 4800 2900 4800
+Text Label 3000 4800 0    50   ~ 0
+GND
+Wire Wire Line
+	900  6100 950  6100
+Wire Wire Line
+	900  6200 1000 6200
+Text Label 900  6200 2    50   ~ 0
+M4_OUT1
+Text Label 900  6400 2    50   ~ 0
+M4_OUT2
+Wire Wire Line
+	1900 6200 1800 6200
+Wire Wire Line
+	1900 6100 1800 6100
+Text Label 1600 6300 0    50   ~ 0
+GND
+Text HLabel 1900 6100 2    50   Output ~ 0
+M4_QDA
+Text HLabel 1900 6200 2    50   Output ~ 0
+M4_QDB
+$Comp
+L Device:C C52
+U 1 1 5EE3C7C2
+P 1800 6500
+F 0 "C52" H 1915 6546 50  0000 L CNN
+F 1 "10n" H 1915 6455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 6350 50  0001 C CNN
+F 3 "~" H 1800 6500 50  0001 C CNN
+	1    1800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C49
+U 1 1 5EE3C7C8
+P 1800 5800
+F 0 "C49" H 1915 5846 50  0000 L CNN
+F 1 "10n" H 1915 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 5650 50  0001 C CNN
+F 3 "~" H 1800 5800 50  0001 C CNN
+	1    1800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_TVS-Diodes:PESD2CAN_215 D14
+U 1 1 5EE3C7D7
+P 2600 6150
+F 0 "D14" H 2600 6537 60  0000 C CNN
+F 1 "PESD2CAN_215" H 2600 6431 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2800 6350 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 6450 60  0001 L CNN
+F 4 "1727-3891-1-ND" H 2800 6550 60  0001 L CNN "Digi-Key_PN"
+F 5 "PESD2CAN,215" H 2800 6650 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 2800 6750 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 2800 6850 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 2800 6950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/PESD2CAN,215/1727-3891-1-ND/1589996" H 2800 7050 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 24V 41V SOT23" H 2800 7150 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 2800 7250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2800 7350 60  0001 L CNN "Status"
+	1    2600 6150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1800 6050 1800 6100
+Connection ~ 1800 6100
+Wire Wire Line
+	1800 6200 1800 6250
+Connection ~ 1800 6200
+Wire Wire Line
+	1800 5950 1800 6050
+Connection ~ 1800 6050
+Wire Wire Line
+	1800 6350 1800 6250
+Connection ~ 1800 6250
+Wire Wire Line
+	1800 5650 1800 5550
+Wire Wire Line
+	1800 6650 1800 6750
+Text Label 1800 6750 0    50   ~ 0
+GND
+Text Label 1800 5550 0    50   ~ 0
+GND
+Wire Wire Line
+	3000 6150 2900 6150
+Text Label 3000 6150 0    50   ~ 0
+GND
+Wire Wire Line
+	1800 2100 2300 2100
+Text HLabel 1900 1950 2    50   Output ~ 0
+M1_QDA
+Wire Wire Line
+	1800 1900 2300 1900
+Wire Wire Line
+	1800 3300 2300 3300
+Wire Wire Line
+	1800 3500 2300 3500
+Wire Wire Line
+	1800 4700 2300 4700
+Wire Wire Line
+	1800 4900 2300 4900
+Wire Wire Line
+	1800 6050 2300 6050
+Wire Wire Line
+	1800 6250 2300 6250
+Wire Wire Line
+	10100 4550 10100 4650
+Wire Wire Line
+	6600 4550 6600 4650
+Wire Wire Line
+	6600 2350 6600 2450
+Wire Wire Line
+	10100 2350 10100 2450
+NoConn ~ 4700 3300
+NoConn ~ 4700 5500
+NoConn ~ 8200 5500
+NoConn ~ 8200 3300
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J9
+U 1 1 5EC5D886
+P 1200 2050
+F 0 "J9" H 1250 2367 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 1250 2276 50  0000 C CNN
+F 2 "Connector_JST:JST_PHD_B8B-PHDSS_2x04_P2.00mm_Vertical" H 1200 2050 50  0001 C CNN
+F 3 "~" H 1200 2050 50  0001 C CNN
+	1    1200 2050
+	1    0    0    -1  
+$EndComp
+Text Label 900  2050 2    50   ~ 0
+M1_OUT1
+Wire Wire Line
+	1000 2050 900  2050
+Wire Wire Line
+	1000 2250 900  2250
+Wire Wire Line
+	1000 2150 950  2150
+Wire Wire Line
+	950  2150 950  1950
+Wire Wire Line
+	950  1950 1000 1950
+Wire Wire Line
+	950  1950 900  1950
+Connection ~ 950  1950
+Text Label 900  1950 2    50   ~ 0
+GND
+Wire Wire Line
+	1500 2250 1600 2250
+Text Label 1600 2250 0    50   ~ 0
++3v3
+Wire Wire Line
+	1500 2050 1800 2050
+Wire Wire Line
+	1500 1950 1800 1950
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J10
+U 1 1 5ECE2ADF
+P 1200 3450
+F 0 "J10" H 1250 3767 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 1250 3676 50  0000 C CNN
+F 2 "Connector_JST:JST_PHD_B8B-PHDSS_2x04_P2.00mm_Vertical" H 1200 3450 50  0001 C CNN
+F 3 "~" H 1200 3450 50  0001 C CNN
+	1    1200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J11
+U 1 1 5ECE3F2C
+P 1200 4850
+F 0 "J11" H 1250 5167 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 1250 5076 50  0000 C CNN
+F 2 "Connector_JST:JST_PHD_B8B-PHDSS_2x04_P2.00mm_Vertical" H 1200 4850 50  0001 C CNN
+F 3 "~" H 1200 4850 50  0001 C CNN
+	1    1200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J12
+U 1 1 5ECE4734
+P 1200 6200
+F 0 "J12" H 1250 6517 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 1250 6426 50  0000 C CNN
+F 2 "Connector_JST:JST_PHD_B8B-PHDSS_2x04_P2.00mm_Vertical" H 1200 6200 50  0001 C CNN
+F 3 "~" H 1200 6200 50  0001 C CNN
+	1    1200 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3350 1800 3350
+Wire Wire Line
+	1500 3450 1800 3450
+Wire Wire Line
+	1500 3650 1600 3650
+Text Label 1600 3650 0    50   ~ 0
++3v3
+Wire Wire Line
+	1000 3550 950  3550
+Wire Wire Line
+	950  3550 950  3350
+Wire Wire Line
+	950  3350 1000 3350
+Wire Wire Line
+	950  3350 900  3350
+Connection ~ 950  3350
+Text Label 900  3350 2    50   ~ 0
+GND
+Wire Wire Line
+	1500 4750 1800 4750
+Wire Wire Line
+	1500 4850 1800 4850
+Wire Wire Line
+	1600 4950 1500 4950
+Wire Wire Line
+	1600 5050 1500 5050
+Text Label 1600 5050 0    50   ~ 0
++3v3
+Wire Wire Line
+	1000 5050 900  5050
+Wire Wire Line
+	1000 4950 950  4950
+Wire Wire Line
+	950  4950 950  4750
+Connection ~ 950  4750
+Wire Wire Line
+	950  4750 1000 4750
+Text Label 900  4750 2    50   ~ 0
+GND
+Wire Wire Line
+	1500 6100 1800 6100
+Wire Wire Line
+	1500 6200 1800 6200
+Wire Wire Line
+	1600 6300 1500 6300
+Wire Wire Line
+	1600 6400 1500 6400
+Text Label 1600 6400 0    50   ~ 0
++3v3
+Wire Wire Line
+	1000 6400 900  6400
+Wire Wire Line
+	1000 6300 950  6300
+Wire Wire Line
+	950  6300 950  6100
+Connection ~ 950  6100
+Wire Wire Line
+	950  6100 1000 6100
+Text Label 900  6100 2    50   ~ 0
+GND
+$EndSCHEMATC
